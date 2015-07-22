@@ -1,0 +1,529 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00af3f;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+.hidden {
+	display: none;
+}
+
+/****** Allowance Works ******/
+/*** header ***/
+header {
+	background: #000;
+	padding: 20px 0;
+}
+.logo {
+	background: url(images/logo.gif) no-repeat;
+	width: 177px;
+	height: 84px;
+	text-indent: -9999em;
+	margin: 0 40px;
+	display: block;
+}
+
+.logo a {
+	width: 177px;
+	height: 84px;
+	display: block;
+}
+
+/*** main ***/
+.main {
+	background: #fff;
+	width: 980px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.page-title {
+	font-size: 3em;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.page-subtitle {
+	font-size: 1.5em;
+	margin: 0 0 20px;
+}
+
+.page-prompt {
+	text-align: center;
+}
+
+.login-content, .create-account-content {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.login-form {
+}
+
+.login-form fieldset, .create-account-form fieldset {
+	margin: 30px 0;
+	border: 3px solid #dadada;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.form-input {
+	margin: 0 0 20px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	display: block;
+	outline: none;
+}
+
+.form-input:focus {
+	border-color: #aaa;
+	transition: border-color .2s;
+	-webkit-transition: border-color .2s;
+}
+
+.form-select {
+	display: inline-block;
+}
+
+.button {
+	background: #89afaf; /* Old browsers */
+	background: -moz-linear-gradient(top,  #89afaf 0%, #6b9ea0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#89afaf), color-stop(100%,#6b9ea0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #89afaf 0%,#6b9ea0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #89afaf 0%,#6b9ea0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #89afaf 0%,#6b9ea0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #89afaf 0%,#6b9ea0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89afaf', endColorstr='#6b9ea0',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	text-decoration: none;
+	line-height: normal;
+	margin: 0;
+	border: 1px solid #73b8bb;
+	border-radius: 2px;
+	padding: 10px 24px;
+	display: inline-block;
+	outline: none;
+}
+
+.button:hover, .button:focus {
+	background: #a1d0d1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a1d0d1 0%, #7fbdc0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1d0d1), color-stop(100%,#7fbdc0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a1d0d1 0%,#7fbdc0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a1d0d1 0%,#7fbdc0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a1d0d1 0%,#7fbdc0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a1d0d1 0%,#7fbdc0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1d0d1', endColorstr='#7fbdc0',GradientType=0 ); /* IE6-9 */
+	
+}
+
+.button:active {
+	background: #7cbdbe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7cbdbe 0%, #5fadb1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7cbdbe), color-stop(100%,#5fadb1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7cbdbe 0%,#5fadb1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7cbdbe 0%,#5fadb1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7cbdbe 0%,#5fadb1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7cbdbe 0%,#5fadb1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cbdbe', endColorstr='#5fadb1',GradientType=0 ); /* IE6-9 */
+	text-decoration: none;
+	padding: 11px 24px 9px;
+}
+
+.login-content .new-account-link {
+	text-align: center;
+	display: block;
+}
+
+.age-buttons {
+	width: 100%;
+	margin: 30px 0;
+}
+
+.age-button:first-child {
+	float: left;
+}
+
+.age-button:last-child {
+	float: right;
+}
+
+.age-button img {
+	margin: 0 0 5px;
+	border-radius: 8px;
+	border: 3px solid #ccc;
+	/*box-shadow: 1px 1px 7px 0 rgba(0,0,0,.3);*/
+	display: block;
+}
+
+.age-button img:hover {
+	border-color: #aaa;
+	transition: border-color .2s;
+}
+
+.age-button span {
+	text-align: center;
+	display: block;
+}
+
+.dob-input {
+	width: 100px;
+	display: inline;
+}
+
+.empty-data-prompt {
+	margin: 0 0 20px;
+}
+
+.children-table {
+	margin: 0 0 20px;
+}
+
+/*** Select Chores ***/
+.chores-content {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.chore-checkboxes {
+	height: 100px;
+	margin: 0 0 30px;
+	clear: both;
+}
+
+.custom-checkbox {
+	margin: 0 30px 0 0;
+	float: left;
+}
+.custom-checkbox label {
+	background: #fff;
+	width: 64px;
+	height: 64px;
+	border-radius: 8px;
+	border: 2px solid #ccc;
+	display: block;
+	position: relative;
+}
+
+.custom-checkbox input {
+	display: none;
+}
+
+.custom-checkbox label:hover, .custom-checkbox label.hover {
+	border-color: #aaa;
+	transition: border-color .2s;
+	-webkit-transition: border-color .2s;
+}
+
+.custom-checkbox label.checked {
+	border-color: #00af3f;
+	-webkit-transition: border-color .2s;
+}
+
+.custom-checkbox .chore-icon {
+	width: 60px;
+	height: 60px;
+	margin: 2px;
+}
+
+.custom-checkbox #bed .chore-icon {
+	background: #fff url(images/calculator-icons/bed.png) no-repeat center center;
+}
+
+.custom-checkbox #dishes .chore-icon {
+	background: #fff url(images/calculator-icons/dishes.png) no-repeat center center;
+}
+
+.custom-checkbox #dog .chore-icon {
+	background: #fff url(images/calculator-icons/dog.png) no-repeat center center;
+}
+
+.custom-checkbox #dust .chore-icon {
+	background: #fff url(images/calculator-icons/dust.png) no-repeat center center;
+}
+
+.custom-checkbox #garbage .chore-icon {
+	background: #fff url(images/calculator-icons/garbage.png) no-repeat center center;
+}
+
+.custom-checkbox #horse .chore-icon {
+	background: #fff url(images/calculator-icons/horse.png) no-repeat center center;
+}
+
+.custom-checkbox #house .chore-icon {
+	background: #fff url(images/calculator-icons/house.png) no-repeat center center;
+}
+
+.custom-checkbox #recycle .chore-icon {
+	background: #fff url(images/calculator-icons/recycle.png) no-repeat center center;
+}
+
+.custom-checkbox #soap .chore-icon {
+	background: #fff url(images/calculator-icons/soap.png) no-repeat center center;
+}
+
+.custom-checkbox #vacuum .chore-icon {
+	background: #fff url(images/calculator-icons/vacuum.png) no-repeat center center;
+}
+
+.custom-checkbox #windows .chore-icon {
+	background: #fff url(images/calculator-icons/windows.png) no-repeat center center;
+}
+
+.chore-label {
+	position: absolute;
+	top: 78px;
+}
+
+.custom-chore-frequency, .add-goal, .custom-chore-input {
+	display: none;
+}
+
+.next-step {
+	float: right;
+}
+
+.chores-list {
+	display: none;
+}
+
+/*** Goals ***/
+
+.goals-table {
+	width: 60%;
+	text-align: left;
+	margin: 0 30px 30px 0;
+	float: left;
+}
+
+.goals-buttons {
+	width: 30%;
+	float: right;
+}
+
+table th {
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+table td {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+table th:first-child, table td:first-child {
+	border-left: 0;
+}
+
+table th:last-child, table td:last-child {
+	border-right: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+.goals .add-more-button {
+	margin: 30px 0 0;
+}
+
+.add-more-button {
+	display: inline-block;
+}
+
+.goal-list {
+	margin: 0 0 30px;
+}
+
+.goal-list-item {
+	width: 30%;
+	text-align: center;
+	float: left;
+}
+
+.goal-label, .goal-list .value {
+	font-size: 1.25em;
+	display: block;
+}
+
+.finish-button {
+	margin: 30px 0 0;
+}
+
+.overview-chores-table {
+	width: 100%;
+	margin: 0 auto 30px;
+}
+
+.overview-goals {
+	width: 100%;
+}
+
+.overview-goals-table {
+	width: 65%;
+	float: left;
+}
+
+.overview-buttons {
+	width: 28%;
+	float: right;
+}
+
+.overview-buttons .button {
+	margin: 0 0 20px;
+}
+
+
+/*** User Login Welcome ***/
+.welcome-content {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.welcome-menu li {
+	margin: 0 0 30px;
+}
+
+.welcome-menu li a {
+	width: 120px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+
+/*** Complete Chores ***/
+.completed-chores-content {
+	position: relative;
+}
+
+.completed-chores-table {
+	width: 85%;
+	margin: 30px auto ;
+}
+
+.chore-list-button {
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+}
+
+.chore-list-button span {
+	display: block;
+}
+
+.chore-list-button i {
+	font-size: 3em;
+}
+
+.chore-list-prev {
+	left: 0;
+}
+
+.chore-list-next {
+	right: 0;
+}
+
+.loading {
+	visibility: hidden;
+}
+
+/*** Progress ***/
+.progress-content {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#progress-range-select {
+	width: 150px;
+	margin: 0 auto 30px;
+	display: block;
+}
+
+.progress-table-and-buttons {
+	width: 100%;
+}
+
+.progress-table {
+	float: right;
+}
+
+.progress-table th, .progress-table td {
+	border: 0;
+}
+
+.visualize-key {
+	font-size: .9em;
+}
+
+.progress-buttons {
+	float: right;
+}
+
+.progress-buttons .button {
+	display: block;
+	margin: 0 0 20px;
+}
+
+/*** Value of Saving ***/
+.saving-content {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.saving-table-and-chart {
+	width: 100%;
+}
+
+.saving-table {
+	margin: 0 0 30px;
+}
+
+.saving-table th, .saving-table td {
+	border: 0;
+}
+
+.goal-chart {
+	border: 1px solid #ccc;
+	float: right;
+}
+
+.goal-chart th, .goal-chart td {
+	border: 0;
+}
